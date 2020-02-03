@@ -1,5 +1,7 @@
 # sober #
 
+Pelican-sober-qw is a fork from Pelican-sober. This forked theme makes a few cosmetic changes and alters the fonts.
+
 Pelican-sober is a very light theme focused on readability :
 
 * Integration of [TinyTypo](http://tinytypo.tetue.net)
@@ -7,7 +9,6 @@ Pelican-sober is a very light theme focused on readability :
 * Option to fade out sidebar to focus on article reading
 
 This theme provides also classical features like Google Analytics, Twitter, Disqus and Pygments integration.
-
 
 ## Screenshot ##
 
