@@ -14,6 +14,7 @@ Colors :
 @import url("pygment.css");
 
 
+
 /* Latout */
 
 article,
@@ -33,19 +34,20 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F9F8F4;
   font-weight: 300;
   font-size: 0.95em;
   line-height: 150%;
   text-align: left;
   padding: 0;
   min-width: 740px;
-  background: linear-gradient(0deg, #FFFFFF, #FEFEFE) repeat scroll 0% 0% transparent;
+  
 }
 
 header {
-  border-top: 4px solid #4271AE;
-  border-bottom: 1px solid #D6D6D6;
+  border-top: 4px solid #f9f8f4;
+  border-bottom: 2px solid saddlebrown;
   height: 50px;
   line-height: 50px;
   padding: 0 1em;
@@ -68,6 +70,11 @@ header {
   padding: 0 20px 1em 3%;  
 }
 
+.sidebar hr {
+  color: saddlebrown;
+  height: 2px;
+}
+
 footer {
   border-top: 1px dotted #D6D6D6;
   line-height: 30px;
@@ -83,7 +90,9 @@ header a {
 }
 
 header a.title {
-  font-size: 1.25em;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 3.0em;
+  color: darkgreen;
 }
 
 header .feeds {
@@ -114,6 +123,10 @@ header .pages a {
   font-size: 1.1em;
 }
 
+header .seperator{
+  color: saddlebrown;
+}
+
 
 /* Sidebar */
 
@@ -134,6 +147,13 @@ header .pages a {
 /* Titles */
 
 h1 a {
+  font-family: 'Oswald', sans-serif;
+  color: inherit;
+  border-bottom: none;
+}
+
+h3{
+  font-family: 'Oswald', sans-serif;
   color: inherit;
   border-bottom: none;
 }
@@ -177,13 +197,17 @@ pre {
 
 hr {
   margin: 40px 5% 60px 5%;
-  color: #d6d6d6;
+  color: saddlebrown;
   box-shadow: 0.1em 0.1em 0.1em #EFEFEF;
   border-radius: 5px;
 }
 
 
 /* Article */
+
+article.h1 {
+  font-family: 'Oswald', sans-serif;
+}
 
 article.summary {
   margin-bottom: 40px;
