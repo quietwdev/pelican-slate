@@ -47,8 +47,8 @@ body {
 
 header {
   border-top: 4px solid #f9f8f4;
-  border-bottom: 2px solid saddlebrown;
-  height: 50px;
+  border-bottom: 2px solid darkslategrey;
+  height: 58px;
   line-height: 50px;
   padding: 0 1em;
   margin-bottom: 1.5em;
@@ -71,8 +71,14 @@ header {
 }
 
 .sidebar hr {
-  color: saddlebrown;
+  color: darkslategrey;
   height: 2px;
+}
+
+.sidebar h2 {
+  font-family: 'Oswald', sans-serif;
+  color: inherit;
+  color: darkslateblue; 
 }
 
 footer {
@@ -91,8 +97,8 @@ header a {
 
 header a.title {
   font-family: 'Kaushan Script', cursive;
-  font-size: 3.0em;
-  color: darkgreen;
+  font-size: 4.0em;
+  color: darkslateblue;
 }
 
 header .feeds {
@@ -120,11 +126,13 @@ header .pages {
 }
 
 header .pages a {
+  font-family: 'Oswald', sans-serif;
   font-size: 1.1em;
+  color: darkslateblue;
 }
 
 header .seperator{
-  color: saddlebrown;
+  color: darkslategrey;
 }
 
 
@@ -150,12 +158,14 @@ h1 a {
   font-family: 'Oswald', sans-serif;
   color: inherit;
   border-bottom: none;
+  color: darkslategray;
 }
 
 h3{
   font-family: 'Oswald', sans-serif;
   color: inherit;
   border-bottom: none;
+  color: darkslategray;
 }
 
 
@@ -197,7 +207,7 @@ pre {
 
 hr {
   margin: 40px 5% 60px 5%;
-  color: saddlebrown;
+  color: darkslateblue;
   box-shadow: 0.1em 0.1em 0.1em #EFEFEF;
   border-radius: 5px;
 }
@@ -205,8 +215,11 @@ hr {
 
 /* Article */
 
-article.h1 {
+article h1 {
   font-family: 'Oswald', sans-serif;
+  color: inherit;
+  border-bottom: none;
+  color: darkslategray;
 }
 
 article.summary {
@@ -269,7 +282,9 @@ ol.archive li .tags
   clear: both;
 }
 
-.social a {}
+.social a {
+
+}
 
 .social i { 
   float: left;

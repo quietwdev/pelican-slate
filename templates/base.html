@@ -33,10 +33,10 @@
 	  <header role="banner">
 	    <div class="feeds">
 	      {% if FEED_ALL_ATOM %}
-	      <a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" rel="alternate"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/feed-32px.png" alt="atom feed"/></a>
+	      <a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" rel="alternate"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/feed-18px.png" alt="atom feed"/></a>
 	      {% endif %}
 		  {% if FEED_ALL_RSS %}
-		  <a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" rel="alternate"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/feed-32px.png" alt="rss feed"/></a>
+		  <a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" rel="alternate"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/feed-18px.png" alt="rss feed"/></a>
           {% endif %}
 	    </div>
 	    {% if pages %}
@@ -64,6 +64,15 @@
 	              <h2>About</h2>
 			      <p>
                     {{ PELICAN_SOBER_ABOUT }}
+			      </p>
+			    </aside>
+			  {% endif %}
+
+			  {% if PELICAN_SOBER_LICENSE %}
+	            <aside>
+	              <h2>Content License</h2>
+			      <p>
+                    {{ PELICAN_SOBER_LICENSE }}
 			      </p>
 			    </aside>
 			  {% endif %}
@@ -107,7 +116,7 @@
 
       <footer>
 		<p role="contentinfo">
-		  {{ AUTHOR }} - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-sober">pelican-sober</a>.
+		  {{ AUTHOR }} - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/quietwdev/pelican-sober-qw">pelican-sober-qw</a>.
     	</p>
 
 	  </footer>	
