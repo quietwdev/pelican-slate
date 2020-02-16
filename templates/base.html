@@ -77,29 +77,40 @@
 			    </aside>
 			  {% endif %}
 
-  	          <nav>
+  	        <nav>
 	            <h2>Categories</h2>
 	            <ul>
-	              {% for cat, null in categories %}
-	                <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-	              {% endfor %}
+	            	{% for cat, null in categories %}
+	            		<li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+	            	{% endfor %}
+				</ul>
+	            <h2>Previous {{ HISTORY_COUNT }} Posts</h2>
+	            <ul>
+					{% for article in articles %}
+						{% if loop.index > 1 and loop.index <= HISTORY_COUNT %}
+							<li>
+								<a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
+							</li>
+						{% endif %}
+					{% endfor %}
+					<!-- <li><a href="articlelist.html"><i>All previous posts.</i></a></li> -->
 				</ul>
 				<hr/>
-	          </nav>
+	        </nav>
 
-	          {% if SOCIAL %}
+	        {% if SOCIAL %}
 	            <aside>
-	            <h2>Social</h2>
-			      <ul class="social">
-				    {% for name, link in SOCIAL %}
-				    <li><a href="{{ link }}">{{ name }}</a><i></i></li>
-				    {% endfor %}
-				  </ul>
-				  <hr/>
+	            	<h2>Social</h2>
+			      	<ul class="social">
+				    	{% for name, link in SOCIAL %}
+				    		<li><a href="{{ link }}">{{ name }}</a><i></i></li>
+				    	{% endfor %}
+				  	</ul>
+				  	<hr/>
 			    </aside>
-			  {% endif %}
+			{% endif %}
 
-	          {% if LINKS %}
+	        {% if LINKS %}
 	            <aside>
 	              <h2>Blogroll</h2>
 	              <ul>
@@ -108,7 +119,7 @@
 	                {% endfor %}
 	              </ul>
 	            </aside>
-	          {% endif %}
+	        {% endif %}
 	        </div>
 		  </div>
 
@@ -116,7 +127,7 @@
 
       <footer>
 		<p role="contentinfo">
-		  {{ AUTHOR }} - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/quietwdev/pelican-sober-qw">pelican-sober-qw</a>.
+		  Copyright 2020 {{ AUTHOR }}. Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/quietwdev/pelican-sober-qw">pelican-sober-qw</a>.
     	</p>
 
 	  </footer>	
