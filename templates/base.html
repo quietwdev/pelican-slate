@@ -11,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans|Oswald&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
 		
-    {% if PELICAN_SOBER_STICKY_SIDEBAR %}
+    {% if PELICAN_SLATE_STICKY_SIDEBAR %}
 	  <script type="text/javascript" src="{{ SITEURL }}/theme/js/custom_scripts.js"></script>
 	{% endif %}
 
@@ -57,22 +57,22 @@
 		  </div>	
 		  
 		  <div class="sidebar">
-		    <div class="sidebar-container" {% if PELICAN_SOBER_STICKY_SIDEBAR %}id="sidebar-container-fixed"{% endif %}>
+		    <div class="sidebar-container" {% if PELICAN_SLATE_STICKY_SIDEBAR %}id="sidebar-container-fixed"{% endif %}>
 
-	          {% if PELICAN_SOBER_ABOUT %}
+	          {% if PELICAN_SLATE_ABOUT %}
 	            <aside>
 	              <h2>About</h2>
 			      <p>
-                    {{ PELICAN_SOBER_ABOUT }}
+                    {{ PELICAN_SLATE_ABOUT }}
 			      </p>
 			    </aside>
 			  {% endif %}
 
-			  {% if PELICAN_SOBER_LICENSE %}
+			  {% if PELICAN_SLATE_LICENSE %}
 	            <aside>
 	              <h2>Content License</h2>
 			      <p>
-                    {{ PELICAN_SOBER_LICENSE }}
+                    {{ PELICAN_SLATE_LICENSE }}
 			      </p>
 			    </aside>
 			  {% endif %}
@@ -84,10 +84,10 @@
 	            		<li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
 	            	{% endfor %}
 				</ul>
-	            <h2>Previous {{ HISTORY_COUNT }} Posts</h2>
+	            <h2>Previous {{ PELICAN_SLATE_HISTORY }} Posts</h2>
 	            <ul>
 					{% for article in articles %}
-						{% if loop.index > 1 and loop.index <= HISTORY_COUNT %}
+						{% if loop.index > 1 and loop.index <= PELICAN_SLATE_HISTORY %}
 							<li>
 								<a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
 							</li>
@@ -127,7 +127,7 @@
 
       <footer>
 		<p role="contentinfo">
-		  Copyright 2020 {{ AUTHOR }}. Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/quietwdev/pelican-sober-qw">pelican-sober-qw</a>.
+		  Copyright 2020 {{ AUTHOR }}. Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/quietwdev/pelican-slate">pelican-slate</a>.
     	</p>
 
 	  </footer>	

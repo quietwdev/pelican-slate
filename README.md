@@ -1,8 +1,6 @@
-# sober #
+#Pelican Slate#
 
-Pelican-sober-qw is a fork from Pelican-sober. This forked theme makes a few cosmetic changes and alters the fonts.
-
-Pelican-sober is a very light theme focused on readability :
+Pelican-slate is a theme for the Pelican static site generator. It's forked from Pelican-sober, and like Pelican-slate is a very light theme focused on readability :
 
 * Integration of [TinyTypo](http://tinytypo.tetue.net)
 * Utilisation of the font Source Sans Pro
@@ -16,8 +14,10 @@ This theme provides also classical features like Google Analytics, Twitter, Disq
 
 ## Sidebar options ##
 
-* ``PELICAN_SOBER_ABOUT = "My name is Brian" `` option allows you to add a short *About* block in sidebar
-* ``PELICAN_SOBER_STICKY_SIDEBAR = True | False `` option allows you to set the sidebar fixed (following scroll and fading out)
+* ``PELICAN_SLATE_ABOUT = "My name is Brian" `` This option allows you to add a short *About* block in sidebar
+* ``PELCIAN_SLATE_LICENSE = "<license text here>" `` This option allows you to add a content license to your sidebar.
+* ``PELICAN_SLATE_STICKY_SIDEBAR = True | False `` This option allows you to set the sidebar fixed (following scroll and fading out)
+* ``PELICAN_SLATE_HISTORY = 3 `` This option allows you to define how many posts are shown in the history in the sidebar.
 
 ![screenshot2](screenshot2.png)
 
@@ -29,8 +29,8 @@ when a tweet point to it.
 
 If you provide one of the two settings below, twitter card metadata will be automatically added for each post.
 
-* ``PELICAN_SOBER_TWITTER_CARD_CREATOR = '__fle__' `` (author twitter account)
-* ``PELICAN_SOBER_TWITTER_CARD_SITE = '__company__' `` (website/company twitter account)
+* ``PELICAN_SLATE_TWITTER_CARD_CREATOR = '__fle__' `` (author twitter account)
+* ``PELICAN_SLATE_TWITTER_CARD_SITE = '__company__' `` (website/company twitter account)
 
 
 ## Credits ##
